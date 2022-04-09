@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Boston</title>
+</head>
+
+<body>
+
+    
+    <form action="{{ url_for('predict')}}" method="post">
+        <h2>Enter Lstat value</h2>
+        
+        <input id="first" name="lstat" type="number ">
+        <h3>Enter rm value</h3><br><input id="second" name="rm" required="required">
+        <h3>Enter ptratio value</h3><input id="third" name="ptratio" required="required">
+        
+        <br><br><button id="sub" type="submit ">Calculate medv</button>
+        <br>
+
+
+
+
+    </form>
+
+
+
+    <br><br><h3>{{ prediction_text }}<h3>
+
+   
+</body>
+
+</html>
